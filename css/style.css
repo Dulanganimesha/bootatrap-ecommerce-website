@@ -29,8 +29,14 @@ body {
     border-color: var(--pink);
 }
 
+/* text color */
+.text-primary {
+    color: var(--pink) !important;
+}
+
 /* nav bar */
 .navbar {
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
 }
 .navbar-brand img {
@@ -50,7 +56,7 @@ body {
 /* header */
 #header {
     background: url(../images/banner-img-1.jpg) top/cover no-repeat;
-    padding-top: 104px;
+    
 }
 .carousel-inner h1 {
     font-size: 60px;
@@ -72,19 +78,39 @@ body {
     background-color: var(--pink);
     left: -20px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
 /* collection */
-.active-filter-btn {
-    background-color: var(--pink) !important;
-    color: #fff !important;
-    border-color: var(--pink) !important;
+.active-filter-btn{
+    background-color: var(--pink)!important;
+    color: #fff!important;
+    border-color: var(--pink)!important;
+}
+.filter-button-group .btn:hover{
+    color: #fff!important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
 }
 
-/* media queries */
-@media(min-width: 992px) {
-    .nav-item {
-        border-bottom: none;
-    }
+/* special */
+.special-img span {
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn {
+    padding: 8px 20px !important;
+}
+.special-img img {
+    transition: all 0.3s ease;
+}
+.special-img:hover img {
+    transform: scale(1.2);
 }
