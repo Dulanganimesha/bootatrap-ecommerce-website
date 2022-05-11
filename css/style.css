@@ -133,6 +133,11 @@ body {
     border-color: transparent !important;
 }
 
+/* about */
+#about{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
 
 /* media queries */
 @media(min-width: 992px){
